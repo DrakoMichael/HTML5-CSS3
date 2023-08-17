@@ -230,6 +230,7 @@ footer nav a {
       align-items: center;
       margin: 0 auto;
       max-width: 79rem;
+      padding-left: 10px;
     }
     .container .row-reverse {
         flex-direction: row-reverse;
@@ -250,6 +251,14 @@ footer nav a {
     footer nav {
         flex: 1;
 
+    }
+    footer form input {
+        max-width: 410px;
+    }
+    footer form .button {
+        margin: 0;
+        width: fit-content;
+        justify-content: left;
     }
     .newsletterform {
         flex: 3;
