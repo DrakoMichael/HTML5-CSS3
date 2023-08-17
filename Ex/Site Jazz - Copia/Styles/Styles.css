@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    color: white;
+    size: 100vh;
+}
+    .logo {
+    width: 7rem;
+}
+:root {
+    --color-primary: #ED4D1B;
+    --color-secundary: #ff9a3c;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-texto-rodape: #000000;
+}
+body { 
+    background: linear-gradient(78deg, #000333 0%, #131318 100%);
+    padding: 0 1.2rem;
+}
+header,
+.hero-section,
+.courses-section,
+footer {
+    border: solid #Fff;
+    border-width: 0px 1px 1px;
+    padding: 1.25rem;
+}
+header img {
+    display: block;
+    margin: 1rem auto;
+}
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto 0;
+}
+nav a {
+    color: var(--color-white);
+    font-size: 1.24rem;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+header nav a:nth-child(2n - 1) {
+    text-align: right;
+}
+.hero-section {
+    padding-right: 0;
+    padding-bottom: 16rem;
+}
+.hero-section img {
+    display: block;
+    padding-bottom: 1rem;
+    max-width: 100%;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 105%;
+}
+h2 {
+    font-size:  2.5rem;
+}
+.hero-section p {
+    font-size: 1.25rem;
+    padding-right: 1.25rem;
+}
+.courses-section {
+    padding-bottom: 8rem;
+}
+.cards {
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+
+    margin-right: 1.5rem;
+}
+.card {
+    background-color: var(--color-primary);
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+}
+.card:nth-child(2n) {
+    align-self: end;
+    background-color: var(--color-secundary);
+}
+.card strong {
+    display: block;
+    font-size: 1.5rem;
+    margin:  1ren 0;
+}
+.card a {
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content;
+}
+
+
+
+/* detalhes letras e setas----------------------------- */
+.hero-section .button {
+    position: relative;
+}
+.hero-section .button::after {
+    content: '';
+    background: url("../Img/arrow-curve.svg");
+    position: absolute;
+    top: 5rem;
+    right: -4rem;
+    height: 48px;
+    width: 132px;
+}
+.decoration {
+    display: block;
+    position: relative;
+}
+.decoration::after {
+    content: '';
+    background: url(../Img/three-dashes.svg);
+    position: absolute;
+    top: -0.75rem;
+    height: 36px;
+    width: 40px;
+}
+/* classes gerais ---------------------------------------------------------------- */
+.button {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-black);
+    box-shadow:  4px 4px 0 var(--color-black);
+    color: var(--color-black);
+    display: block;
+    font-size: 1.25rem;
+    padding: .75rem 1rem;
+    max-width: 14rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.mt.1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mb-1 { 
+    margin-bottom: 1rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.mx-auto { 
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-primary {
+    color: var(--color-primary)
+}
+.text-center {
+    text-align: center;
+}
+/* -------------------------------------------------------------------------- */
+footer {
+    border-bottom: 0;
+    padding: 1rem 1.23 4rem;
+    color: black
+}
+footer nav a {
+    display: block;
+    padding-left: 0;
+}
+.newsletterform label {
+    display: block;
+    font-size: 1.5rem;
+}
+.newsletterform input {
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0px var(--color-texto-rodape);
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+/* responsividade ------------------------------------------ */
+@media screen and (min-width: 40rem) {
+    header nav {
+        display: block;
+        text-align: center;
+    }
+    /* header .button {
+        display: none;
+    } */
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card:nth-child(2n) {
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width: 48rem) {
+    header div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header,
+    header img,
+    header nav,
+    header .button{
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 72em) {
+    body {
+        padding: 0 20rem;
+    }
+    header {
+        margin: 0 auto;
+
+    }
+    .container {
+      display: flex;  
+      align-items: center;
+      margin: 0 auto;
+      max-width: 79rem;
+      padding-left: 10px;
+    }
+    .container .row-reverse {
+        flex-direction: row-reverse;
+    }
+    .alinhamento {
+        max-width: 70rem;
+    }
+    .about-colum {
+        flex: 2;
+    }
+    .about-colum p {
+        font-size: 1.25rem;
+        max-width: 16rem;
+    }
+    footer{
+        margin: 0 auto;
+    }
+    footer nav {
+        flex: 1;
+
+    }
+    footer form input {
+        max-width: 410px;
+    }
+    footer form .button {
+        margin: 0;
+        width: fit-content;
+        justify-content: left;
+    }
+    .newsletterform {
+        flex: 3;
+    }
+}
