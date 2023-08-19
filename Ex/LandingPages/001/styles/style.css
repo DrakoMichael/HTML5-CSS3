@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cortexto: #fff;
+    --cortexto2: ##FBD784;
+    --corfundo: #0B1D26;
+}
+
+/* gerais ----------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+main img {
+    width: 556px;
+    height: 720px;
+    object-fit: cover;
+    object-position: center;
+}
+main #img-left-1 {
+    object-position: -150px;
+}
+main #img-left-2 {
+    object-position: -300px;
+}
+
+/* ---------------------------------------------- */
+
+body {
+    font-family: Bentham, robot, arial;
+    color: var(--cortexto);
+    background-color: var(--corfundo);
+}
+header {
+    width: 98vw;
+    height: 40px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+header div {
+    padding: 10px;
+}
+header #div-header-menu a{
+    color: var(--cortexto)
+    padding: 10px 10px 10px 10px;
+}
+header div #div-header-account {
+    color: var(--cortexto);
+}
+
+#main-section {
+    width: 98vw;
+    height: 1000px;
+}
+#main-div {
+    background-image: url('../imgs/montanhametadealta.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 98vw;
+    height: 1000px;
+}
