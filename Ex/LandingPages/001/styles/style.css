@@ -51,13 +51,19 @@ header div #div-header-account {
 
 #main-section {
     width: 98vw;
-    height: 1000px;
+    height: fit-content;
 }
-#main-div {
-    background-image: url('../imgs/montanhametadealta.png');
+#section1 {
+    max-height: 100vh;
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.212), var(--corfundo)), url('../imgs/mountainlandscape.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 98vw;
-    height: 1000px;
+}
+#main-div {
+    margin: 100px;
+    margin: 0 auto;
+
+
 }
