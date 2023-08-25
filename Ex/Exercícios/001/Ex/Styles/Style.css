@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: a;
+    height: 100vh;
+}
 
 header {
-    height: auto;
     background-color: rgb(33, 28, 46);
     color: aliceblue;
     padding: 50px;
